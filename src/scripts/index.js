@@ -46,3 +46,5 @@ const getData = (data) => {
 };
 
 getData(data);
+
+console.log(getData);
