@@ -30,8 +30,8 @@ const getData = (data) => {
         restaurantList += `
             <article class="restaurant-item">
                 <div class="restaurant-item-image">
-                    <button id="button-city">${restaurant.city}</button>
                     <img class="restaurant-item-thumbmail" src=${restaurant.pictureId} alt="gambar-restaurant">
+                    <div id="city">${restaurant.city}</div>
                 </div>
                 <div class="restaurant-item-content">
                     <p class="restaurant-rating">Rating : ${restaurant.rating}</p>
