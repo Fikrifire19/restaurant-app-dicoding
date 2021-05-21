@@ -151,7 +151,6 @@ body {
 
 @media screen and (min-width: 700px){
     #restaurant-list {
-        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 10px;
         grid-row-gap: 16px;
@@ -160,7 +159,6 @@ body {
 
 @media screen and (min-width: 900px){
     #restaurant-list {
-        display: grid;
         grid-row-gap: 16px;
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -209,7 +207,6 @@ main {
     width: 100%;
     margin: 60px auto;
     text-align: center;
-    display: contents;
 }
 
 .content-title {
@@ -226,6 +223,7 @@ main {
     text-align: left;
     display: grid;
     grid-row-gap: 16px;
+    float: none;
 }
 
 .restaurant-item {

@@ -26,7 +26,7 @@ console.log(data.restaurants);
 const getData = (data) => {
     let restaurantList = '';
 
-    data.restaurants.forEach((restaurant) => {
+    data.restaurants.map((restaurant) => {
         restaurantList += `
             <article class="restaurant-item">
                 <div class="restaurant-item-image">
