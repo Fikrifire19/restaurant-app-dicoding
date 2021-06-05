@@ -31,7 +31,7 @@ body {
     top: 0;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 599px) {
     .header_title {
         display: none;
     }
@@ -80,6 +80,10 @@ body {
         text-decoration: none;
         font-size: 25px;
         color: white;
+    }
+
+    #city {
+        margin-top: -150px;
     }
 
 }
@@ -147,6 +151,10 @@ body {
         text-decoration: underline;
         color: #000;
     }
+
+    #city {
+        margin-top: -150px;
+    }
 }
 
 @media screen and (min-width: 700px){
@@ -154,6 +162,10 @@ body {
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 10px;
         grid-row-gap: 16px;
+    }
+
+    #city {
+        margin-top: -150px;
     }
 }
 
@@ -201,6 +213,7 @@ main {
     width: 100%;
     margin: 0 auto;
     padding: 32px;
+    height: max-content;
 }
 
 #content {
@@ -222,6 +235,7 @@ main {
     margin: 32px auto auto;
     display: grid;
     grid-row-gap: 16px;
+    width: 100%;
 }
 
 .restaurant-item {
@@ -238,7 +252,6 @@ main {
 
 #city {
     position: absolute;
-    margin-top: -250px;
     padding: 1%;
     background-color: yellow;
     font-size: 1.25em;
