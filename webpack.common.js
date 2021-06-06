@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
@@ -7,6 +8,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+  },
+  devServer: {
+    port: 9000,
   },
   module: {
     rules: [
@@ -26,7 +30,7 @@ module.exports = {
             loader: 'css-loader',
             options: {
               url: false,
-            }
+            },
           },
         ],
       },

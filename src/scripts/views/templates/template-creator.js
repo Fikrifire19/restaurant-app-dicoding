@@ -1,40 +1,39 @@
 const createRestaurantDetailTemplate = (restaurant) => `
-<h2 class="restaurant-title">${}</h2>
-<img class="restaurant-poster" src="${}" alt="${}" />
+<h2 class="restaurant-title">${restaurant.name}</h2>
+<img class="restaurant-poster" src="https://restaurant-api.dicoding.dev/images/medium/${restaurant.pictureId}" alt="${restaurant.name}" />
 <div class="restaurant-info">
 <h3>Information</h3>
-  <h4>Tagline</h4>
-  <p>${}</p>
-  <h4>Release Date</h4>
-  <p>${}</p>
-  <h4>Duration</h4>
-  <p>${} minutes</p>
+  <h4>Kota</h4>
+  <p>${restaurant.city}</p>
+  <h4>Alamat</h4>
+  <p>${restaurant.address}</p>
   <h4>Rating</h4>
-  <p>${}</p>
+  <p>${restaurant.rating}</p>
 </div>
 <div class="restaurant-overview">
-  <h3>Overview</h3>
-  <p>${}</p>
+  <h3>OverView</h3>
+  <h4>Description</h4>
+  <p>${restaurant.description}</p>
 </div>
 `;
 
-const createRestaurantItemTemplate = `
+const createRestaurantItemTemplate = (restaurant) => `
     <div class="restaurant-item">
     <div class="restaurant-item-header">
-        <img class="restaurant-item-header-poster" alt="${}"
-            src="${}">
+        <img class="restaurant-item-header-poster" alt="${restaurant.name}"
+            src="https://restaurant-api.dicoding.dev/images/small/${restaurant.pictureId}">
         <div class="restaurant-item-header-rating">
-            <p>⭐️<span class="restaurant-item-header-rating-score">${}</span></p>
+            <p>⭐️<span class="restaurant-item-header-rating-score">${restaurant.rating}</span></p>
         </div>
     </div>
     <div class="restaurant-item-content">
-        <h3><a href="${`/#/detail/${}`}">${}</a></h3>
-        <p>${}</p>
+        <h3><a href="${`/#/detail/${restaurant.id}`}">${restaurant.name}</a></h3>
+        <p>${restaurant.description}</p>
     </div>
     </div>
 `;
 
 export {
-    createRestaurantDetailTemplate,
-    createRestaurantItemTemplate,
+  createRestaurantDetailTemplate,
+  createRestaurantItemTemplate,
 };

@@ -11,7 +11,24 @@
     flex-direction: column;
   }
    
-   
+  /*
+    Skip Content
+  */
+    
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #bf1722;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+  }
+
+  .skip-link:focus {
+    top: 0;
+  }
+
   /*
     AppBar
   */
@@ -93,9 +110,37 @@
    
   .content .content-heading {
     font-weight: normal;
+    text-align-last: center;
   }
    
-   
+  .hero {
+    padding: 20%;
+    align-items: center;
+    text-align: center;
+    background-image: url("/images/heros/hero-image-2.jpg");
+    background-position: center;
+    background-size: cover; 
+    margin-bottom: 2em;   
+  }
+
+  .hero_inner {
+      margin: 0 auto;
+      max-width: 800px;
+  }
+
+  .hero_title {
+      color: red;
+      font-weight: 800;
+      font-size: 36px;
+  }
+
+  .hero_tagline {
+      color: red;
+      margin-top: 16px;
+      font-size: 18px;
+      font-weight: 700;
+  } 
+
   /*
     Restaurants
   */

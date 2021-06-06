@@ -6,18 +6,18 @@ const DrawerInitiator = {
     });
 
     content.addEventListener('click', (event) => {
-      this._closerDrawer(event, drawer);
+      this._closeDrawer(event, drawer);
     });
   },
 
   _toggleDrawer(event, drawer) {
-      event.stopPropagation();
-      drawer.classList.toggle('open');
+    event.stopPropagation();
+    drawer.classList.toggle('open');
   },
 
   _closerDrawer(event, drawer) {
-      event.stopPopagation();
-      drawer.classList.remove('open');
+    event.stopPopagation();
+    drawer.classList.remove('open');
   },
 };
 
