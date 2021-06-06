@@ -4,48 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurant list app">
+    <link rel="icon" href="favicon.png">
     <title>Restaurant Apps Starter Project</title>
+    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
 </head>
 <body>
-<!-- <h1>Restaurant Apps Starter Project</h1>
-<p>Hallo coders! Anda berhasil menjalankan starter project.</p>
-<p>Jangan lupa untuk menggunakan salah satu gambar yang berada pada ./images/heros sebagai background hero elemen</p>
-<img src="./images/heros/hero-image_1.jpg" width="450" alt="">
-<img src="./images/heros/hero-image_2.jpg" width="450" alt="">
-<img src="./images/heros/hero-image_3.jpg" width="450" alt="">
-<img src="./images/heros/hero-image_4.jpg" width="450" alt=""> -->
 <a href="#content" class="skip-link">Menuju ke konten</a>
-<header class="header">
-    <a id="hamburger" href="#">☰</a>
-    <div class="header_inner">
-        <h1 class="header_title">
-            Hunger Apps
-        </h1>
+<header class="app-bar">
+    <div class="app-bar-menu">
+        <button id="hamburger">☰</button>
     </div>
-    <nav id="drawer" class="nav">
-        <ul class="nav_list">
-            <li class="nav_item"><a href="/">Home</a></li>
-            <li class="nav_item"><a href="#">Favorite</a></li>
-            <li class="nav_item"><a href="https://github.com/Fikrifire19">About Us</a></li>
+    <div class="app-bar-brand">
+        <h1>Hunger Apps</h1>
+    </div>
+    <nav id="navigationDrawer" class="app-bar-navigation">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Favorite</a></li>
+            <li><a href="https://github.com/Fikrifire19">About Us</a></li>
         </ul>
     </nav>
 </header>
-<div class="hero">
-    <div class="hero-inner">
-        <h1 class="hero_title">Anda Lapar?</h1>
-        <p class="hero_tagline">Ingat! Semua Orang Berhak Makan Enak!</p>
+<main id="mainContent">
+    <div class="hero">
+        <div class="hero-inner">
+            <h1 class="hero_title">Anda Lapar?</h1>
+            <p class="hero_tagline">Ingat! Semua Orang Berhak Makan Enak!</p>
+        </div>
     </div>
-</div>
-<main>
-    <section id="content">
-        <h1 class="content-title">Explore Restaurant</h1>
-        <div id="restaurant-list"></div>
+    <section id="content" class="content">
+        <h1 class="content-heading">Explore Restaurant</h1>
+        <div id="restaurants" class="restaurants"></div>
     </section>
 </main>
 <footer>
-    <div class="footer">
-        <p class="footer-title">Copyright © 2020 - Hunger Apps | Designed By Muhamad Fikri Mubarok</p>
-    </div>
+    <p>Copyright © 2020 - Hunger Apps | Designed By Muhamad Fikri Mubarok</p>
 </footer>
 </body>
 </html>

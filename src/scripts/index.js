@@ -1,27 +1,21 @@
 import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/main.css';
-import data from '../data/DATA.json';
+import '../styles/responsive.css';
+// import data from '../data/DATA.json';
 
-const hamburgerButtonElement = document.querySelector("#hamburger");
-const drawerElement = document.querySelector("#drawer");
-const mainElement = document.querySelector("main"); 
+// const hamburgerButtonElement = document.querySelector("#hamburger");
+// const drawerElement = document.querySelector("#drawer");
+// const mainElement = document.querySelector("main"); 
 
-hamburgerButtonElement.addEventListener("click", event => {
-    drawerElement.classList.toggle("open");
-    event.stopPropagation();
-});
+// hamburgerButtonElement.addEventListener("click", event => {
+//     drawerElement.classList.toggle("open");
+//     event.stopPropagation();
+// });
 
-mainElement.addEventListener("click", event => {
-    drawerElement.classList.remove("open");
-    event.stopPropagation();
-});
-
-// fetch('../data/DATA.json')
-//     .then((data) => data.json())
-//     .then((restaurants) => getData(restaurants));
-console.log(data.restaurants);
-
-// let restaurantList = document.querySelector("#restaurant-card");
+// mainElement.addEventListener("click", event => {
+//     drawerElement.classList.remove("open");
+//     event.stopPropagation();
+// });
 
 const getData = (data) => {
     let restaurantList = '';
