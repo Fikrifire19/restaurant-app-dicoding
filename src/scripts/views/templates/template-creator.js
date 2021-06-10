@@ -8,12 +8,15 @@ const createRestaurantDetailTemplate = (restaurant) => `
   <h4>Alamat</h4>
   <p>${restaurant.address}</p>
   <h4>Rating</h4>
-  <p>${restaurant.rating}</p>
+  <p>⭐️<span>${restaurant.rating}</span></p>
 </div>
 <div class="restaurant-overview">
   <h3>OverView</h3>
   <h4>Description</h4>
   <p>${restaurant.description}</p>
+  <p class="menu-category">Menu Category : ${restaurant.categories.map((category) => category.name).join(', ')}</p>
+  <p class="foods-menu">Foods Menu : ${restaurant.menus.foods.map((food) => food.name).join(', ')}</p>
+  <p class="drinks-menu">Drinks Menu : ${restaurant.menus.drinks.map((drink) => drink.name).join(', ')}</p>
 </div>
 `;
 
@@ -22,13 +25,15 @@ const createRestaurantItemTemplate = (restaurant) => `
     <div class="restaurant-item-header">
         <img class="restaurant-item-header-poster" alt="${restaurant.name}"
             src="https://restaurant-api.dicoding.dev/images/small/${restaurant.pictureId}">
-        <div class="restaurant-item-header-rating">
-            <p>⭐️<span class="restaurant-item-header-rating-score">${restaurant.rating}</span></p>
+        <div class="restaurant-item-header-city">
+            <p>${restaurant.city}</p>
         </div>
     </div>
     <div class="restaurant-item-content">
-        <h3><a href="${`/#/detail/${restaurant.id}`}">${restaurant.name}</a></h3>
+        <h3>${restaurant.name}</h3>
+        <p>⭐️<span class="restaurant-item-content-rating-score">${restaurant.rating}</span></p>
         <p>${restaurant.description}</p>
+        <button class="restaurant-item-content-button"><a href="${`/#/detail/${restaurant.id}`}">Detail Restaurant</a>  </button>
     </div>
     </div>
 `;
