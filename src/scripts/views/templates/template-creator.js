@@ -17,6 +17,16 @@ const createRestaurantDetailTemplate = (restaurant) => `
   <p class="menu-category">Menu Category : ${restaurant.categories.map((category) => category.name).join(', ')}</p>
   <p class="foods-menu">Foods Menu : ${restaurant.menus.foods.map((food) => food.name).join(', ')}</p>
   <p class="drinks-menu">Drinks Menu : ${restaurant.menus.drinks.map((drink) => drink.name).join(', ')}</p>
+  <h4>Reviews</h4>
+  <div id="reviews" class="reviews">
+    ${restaurant.customerReviews.map((customerReview) => `
+      <div class="review">
+        <p class="review-name">${customerReview.name}</p>
+        <p class="review-content">${customerReview.review}</p>
+        <p class="review-date">${customerReview.date}</p>
+      </div>
+    `)}
+  </div>
 </div>
 `;
 

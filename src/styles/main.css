@@ -245,7 +245,41 @@
     margin: 8px 0;
   }
    
-   
+  .restaurant .restaurant-overview h3 {
+    margin-bottom: 10px;
+  }
+
+  .restaurant .restaurant-overview h4 {
+    margin-bottom: 10px;
+  }
+
+  .restaurant .restaurant-overview p {
+    margin-bottom: 10px;
+  }
+
+  .restaurant .restaurant-overview .reviews {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 32px 0;
+  }
+  
+  .restaurant .restaurant-overview .reviews .review {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 8px;
+  }
+
+  .restaurant .restaurant-overview .reviews .review .review-name {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .restaurant .restaurant-overview .reviews .review .review-date {
+    font-size: 12px;
+  }
    
   /*
     Footer
