@@ -40,7 +40,7 @@ const LikeButtonInitiator = {
 
     const likeButton = document.querySelector('#likeButton');
     likeButton.addEventListener('click', async () => {
-      await FavoriteRestaurantIdb.deleteMovie(this._restaurant.id);
+      await FavoriteRestaurantIdb.deleteRestaurant(this._restaurant.id);
       this._renderButton();
     });
   },

@@ -5,7 +5,7 @@ const CONFIG = {
   DATABASE_NAME: 'restaurant-list-database',
   DATABASE_VERSION: 1,
   OBJECT_STORE_NAME: 'restaurants',
-  WEB_SOCKET_SERVER: 'wss://restaurant-api.dicoding.dev',
+  WEB_SOCKET_SERVER: 'wss://stormy-badlands-06326.herokuapp.com',
 };
 
 export default CONFIG;
