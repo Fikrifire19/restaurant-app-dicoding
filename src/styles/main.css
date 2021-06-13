@@ -52,6 +52,7 @@
    
   .app-bar .app-bar-menu button {
     background-color: transparent;
+    min-height: 44px;
     border: none;
     font-size: 18px;
     padding: 8px;
@@ -91,6 +92,7 @@
     color: black;
     padding: 8px;
     margin-bottom: 5px;
+    min-height: 44px;
     width: 100%;
   }
    
@@ -198,7 +200,7 @@
   .restaurant-item .restaurant-item-content p {
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     display: -webkit-box;
     -webkit-line-clamp: 4; /* number of lines to show */
     -webkit-box-orient: vertical;
@@ -209,18 +211,20 @@
   }
 
   .restaurant-item .restaurant-item-content .restaurant-item-content-button {
-    padding: 8px 12px;
-    min-height: 44px;
     background: orange;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
+    margin-top: 10px;
+    padding: 18px;
+    min-height: 44px;
   }
-
   .restaurant-item .restaurant-item-content .restaurant-item-content-button a {
     text-decoration: none;
-    font-weight: 600;
+    padding: 16px;
+    min-height: 44px;
     font-stretch: extra-expanded;
     color: white;
+    cursor: pointer;
   }
    
   /*

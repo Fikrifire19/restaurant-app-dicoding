@@ -10,10 +10,10 @@ const WebSocketInitiator = {
   _onMessageHandler(message) {
     const restaurant = JSON.parse(message.data);
     NotificationHelper.sendNotification({
-      title: `${restaurant.title} is on cinema!`,
+      title: `${restaurant.title}`,
       options: {
-        body: restaurant.descriptions,
-        image: `${restaurant.pictureId}`,
+        body: restaurant.description,
+        image: `https://restaurant-api.dicoding.dev/images/small/${restaurant.pictureId}`,
       },
     });
   },

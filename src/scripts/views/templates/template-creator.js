@@ -14,9 +14,9 @@ const createRestaurantDetailTemplate = (restaurant) => `
   <h3>OverView</h3>
   <h4>Description</h4>
   <p>${restaurant.description}</p>
-  <p class="menu-category">Menu Category : ${restaurant.categories.map((category) => category.name).join(', ')}</p>
-  <p class="foods-menu">Foods Menu : ${restaurant.menus.foods.map((food) => food.name).join(', ')}</p>
-  <p class="drinks-menu">Drinks Menu : ${restaurant.menus.drinks.map((drink) => drink.name).join(', ')}</p>
+  <p class="menu-category">Menu Category : ${restaurant.categories.map((category) => category.name)}</p>
+  <p class="foods-menu">Foods Menu : ${restaurant.menus.foods.map((food) => food.name)}</p>
+  <p class="drinks-menu">Drinks Menu : ${restaurant.menus.drinks.map((drink) => drink.name)}</p>
   <h4>Reviews</h4>
   <div id="reviews" class="reviews">
     ${restaurant.customerReviews.map((customerReview) => `

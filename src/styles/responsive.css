@@ -26,6 +26,7 @@
         width: 120px;
         text-align: center;
         margin: 0;
+        min-height: 44px;
     }
    
     .restaurants {
@@ -42,6 +43,11 @@
     }
    
     .restaurant .restaurant-overview {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .restaurant .restaurant-overview .reviews {
         grid-column-start: 1;
         grid-column-end: 3;
     }
