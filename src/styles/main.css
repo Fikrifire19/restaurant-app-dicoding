@@ -116,18 +116,25 @@
   }
    
   .hero {
-    padding: 20%;
+    position: relative;
     align-items: center;
     text-align: center;
-    background-image: url("/images/heros/hero-image-2.jpg");
-    background-position: center;
-    background-size: cover; 
     margin-bottom: 2em;   
   }
 
+  .hero-image {
+    width: 100%;
+  }
+  
+
   .hero_inner {
-      margin: 0 auto;
-      max-width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
   }
 
   .hero_title {

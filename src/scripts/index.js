@@ -15,11 +15,6 @@ const app = new App({
   content: document.querySelector('#mainContent'),
 });
 
-const filterContacts = (filter) => {
-  filter(contacts, contactType.value === 'all' ? {} : { type: contactType.value })
-    .forEach(renderContact);
-};
-
 window.addEventListener('hashchange', () => {
   app.renderPage();
 });
@@ -28,8 +23,4 @@ window.addEventListener('load', () => {
   app.renderPage();
   swRegister();
   WebSocketInitiator.init(CONFIG.WEB_SOCKET_SERVER);
-  import('lodash.filter')
-    .then((module) => module.default)
-    .then(filterContacts)
-    .catch((error) => alert(error));
 });

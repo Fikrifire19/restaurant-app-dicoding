@@ -1,8 +1,8 @@
 const createRestaurantDetailTemplate = (restaurant) => `
 <h2 class="restaurant-title">${restaurant.name}</h2>
-<picture class="restaurant-poster lazyload">
-  <source media="(max-width: 600px)" srcset="https://restaurant-api.dicoding.dev/images/small/${restaurant.pictureId}">
-  <img class="lazyload" src="https://restaurant-api.dicoding.dev/images/medium/${restaurant.pictureId}" alt="${restaurant.name}" />
+<picture>
+  <source class="restaurant-poster lazyload" media="(max-width: 600px)" srcset="https://restaurant-api.dicoding.dev/images/small/${restaurant.pictureId}" type="image/jpeg">
+  <img class="restaurant-poster lazyload" src="https://restaurant-api.dicoding.dev/images/medium/${restaurant.pictureId}" alt="${restaurant.name}" />
 </picture>
 <div class="restaurant-info">
 <h3>Information</h3>
@@ -36,9 +36,9 @@ const createRestaurantDetailTemplate = (restaurant) => `
 const createRestaurantItemTemplate = (restaurant) => `
     <div class="restaurant-item">
     <div class="restaurant-item-header">
-        <picture class="restaurant-item-header-poster lazyload">
-        <source media="(max-width: 600px)" srcset="https://restaurant-api.dicoding.dev/images/small/${restaurant.pictureId}">
-          <img class="lazyload" alt="${restaurant.name}" src="https://restaurant-api.dicoding.dev/images/small/${restaurant.pictureId}">
+        <picture>
+          <source class="restaurant-item-header-poster lazyload" media="(max-width: 600px)" srcset="https://restaurant-api.dicoding.dev/images/small/${restaurant.pictureId}" type="image/jpeg">
+          <img class="restaurant-item-header-poster lazyload" alt="${restaurant.name}" src="https://restaurant-api.dicoding.dev/images/small/${restaurant.pictureId}">
         </picture>
         <div class="restaurant-item-header-city">
             <p>${restaurant.city}</p>
