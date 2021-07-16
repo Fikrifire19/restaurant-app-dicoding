@@ -53,6 +53,10 @@ const createRestaurantItemTemplate = (restaurant) => `
     </div>
 `;
 
+const createNoRestaurantFavorited = () => `
+  <div class="restaurant-item__not__found">Tidak ada restaurant untuk ditampilkan</div>
+`;
+
 const createLikeButtonTemplate = () => `
   <button aria-label="like this restaurant" id="likeButton" class="like">
      <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -68,6 +72,7 @@ const createLikedButtonTemplate = () => `
 export {
   createRestaurantDetailTemplate,
   createRestaurantItemTemplate,
+  createNoRestaurantFavorited,
   createLikeButtonTemplate,
   createLikedButtonTemplate,
 };
